@@ -1,0 +1,19 @@
+<hibernate-mapping>
+	<class name="com.hibernate.enities.Question" table="question151">
+		<id name="qsnId">
+			<generator class="increment"></generator>
+		</id>
+		<property name="qsn"></property>
+
+		<many-to-one name="answer" cascade="all"></many-to-one>
+
+	</class>
+
+	<class name="com.hibernate.enities.Answer" table="answer151">
+		<id name="ansId">
+			<generator class="increment"></generator>
+		</id>
+		<property name="answerName"></property>
+		<property name="postedBy"></property>
+	</class>
+</hibernate-mapping>
